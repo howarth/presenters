@@ -1,10 +1,11 @@
-import sys, parallel
+import sys
+#import parallel
 import Image
 import numpy as np
 import math
 
 
-if __name__ == "main"
+if __name__ == "main":
   args = dict()
 
   with open(sys.argv[1]) as f:
@@ -32,7 +33,6 @@ if __name__ == "main"
   img = Image.fromarray(contrasts);
   img.save('sup.png');
 
-  for 
   
   print args
 
