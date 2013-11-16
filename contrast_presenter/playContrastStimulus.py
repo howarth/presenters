@@ -4,7 +4,7 @@ import numpy as np
 import math
 
 
-def main():
+if __name__ == "main"
   args = dict()
 
   with open(sys.argv[1]) as f:
@@ -37,4 +37,3 @@ def main():
   print args
 
 
-main()
