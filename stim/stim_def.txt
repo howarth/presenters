@@ -1,0 +1,9 @@
+height: 200
+width: 400
+bar_width: 20
+contrast_seq: 1.0 0.0
+fps: 8
+fpc: 16
+rest_before: 5
+rest_after: 5
+repeat: 1
