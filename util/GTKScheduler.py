@@ -5,18 +5,14 @@ class GTKScheduler:
     
     def __init__(self):
         self.actions = 0*[None]
-        self.args = 0*[None]
 
-
-    def schedule(self, time, action, args):
-        gtk.timeout_add(int(time*1000), action, *args)
-
-    def prepare(self):
-        pass
+    def schedule(self, time_s, action, args):
+        self.actions.append((time*1000, action, args))
 
     def start(self):
-        pass
+        for t, action, args in self.actions:
+            gtk.timeout_add(t, wrap_false, (action, args))
 
-    def run_next(action, args):
+    def wrap_false(action, args):
         action(*args)
         return False
